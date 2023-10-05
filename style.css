@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Kalam', cursive; */
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/img.jpg);
+    background-size: cover;
+    color: white;
+}
+nav{
+    width: 100%;
+    height:70px;
+     display: flex; 
+     /* background: red;  */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+}
+.menu a:nth-child(5){
+    background-color: #6ab04c;
+    border-radius: 8px;
+    margin: 0 1rem;
+}
+.menu i{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;;
+}
+.menu a:hover{
+    background: #6ab04c;
+    border-radius: 8px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 70px;
+}
+.left{
+    flex-basis: 40%;
+}
+.right{
+    flex-basis: 50%;
+    padding-left: 330px;
+    height:fit-content;
+    
+    
+}
+.left h2{
+    font-family: 'Poppins', sans-serif; 
+    color: #6ab04c;
+    
+    
+}
+.left h1{
+    font-family: 'Kalam', cursive;
+    font-size: 4em;
+}
+.left p{
+    font-family: 'Poppins', sans-serif; 
+    line-height: 2.5rem;
+
+}
+#hire{
+    text-decoration: none;
+    background: #6ab04c;
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+#myp{   text-decoration: none;
+    
+    color: white;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border: 1px dashed white;
+
+
+}
+#bio{
+    cursor: pointer;
+    padding: 50px 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif; 
+}
+.leftbio{
+    flex-basis: 39%;
+}
+.rightbio{
+    flex-basis: 60%;
+
+}
+.leftbio img{
+    width: 100%;
+    height: 700%;
+    border-radius: 8px;
+
+}
+.rightbio{
+    text-align: right;
+    padding: 0 40px;
+}
+
+.rightbio p{
+    margin: 15px 0;
+    line-height: 1.5rem;
+}
+
+.rightbio p{
+    font-size: 1.5rem;
+}
+.info{
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+
+}
+#follow{
+    text-align: center;
+
+}
+#follow i{
+    color: #6ab04c;
+    font-size: 1.5rem;
+    margin: 4px 0.5rem;
+
+}
+.link{
+    text-align: center;
+    margin-top: 3rem;
+
+}
+#cv{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin: 0 rem;
+    border: 1px dashed gray;
+}
+
+footer{
+    background:rgba(0,0,0,0.7);
+    padding-top: 50px;
+    color: white;
+}
+.cantaint{
+    width: 1140px;
+     margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-contect h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align:center;
+}
+.footer-contect p{
+    width: 300px;
+    margin: auto;
+    padding: 7px;
+    
+
+}
+.footer-contect ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #6ab04c
+    transition- duration 0.5em;
+
+}
+
+
+ li{
+    display:flex;
+    text-align: center;
+    padding: 5px;
+
+}
+ i{
+    color: white;
+    font-size: 45px;
+}
+
+
+.list a{
+    color: white;
+    font-size: 30px;
+
+}
+.list a:hover{
+    background: #6ab04c;
+    border-radius: 8px;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.5rem 1rem;
+
+
+}
+.footer-contect p:hover{
+    background: #6ab04c;
+    border-radius: 8px;
+
+}
+/*---------------------contact us--------------------------*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/img.jpg); */
+    background-size: cover;
+    color: white;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .content h1{
+    font-size: 36px;
+    font-weight: 500;
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+ .container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    font-size: 22px;
+}
+.container .contactinfo .box .icon .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+}
+.container .contactinfo .box .icon .text h3{
+    font-size: 500;
+    color: yellow;
+}
+.contactform{
+    width: 40%;
+    
+    padding: 20px;
+    background: #fff;
+    color: black;
+
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none; 
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+} 
+
+
+/* -------------about---------------------- */
+ 
+.container_1{
+    width: 100%;
+    padding: 30px 10%;
+}
+
+main.row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+
+    
+}
+.col header.title{
+    font-family: 'Poppins', sans-serif;
+        color:white;
+        height:fit-content;
+        padding: 0px 0px 20px 30px;
+}
+
+
+.col .contents_11{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+
+   
+}
+.col .contents_11 .box_1{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+
+}
+.col .contents_11 .box_1 :hover{
+    box-shadow: 0px 3px 12px 0px #6ab04c;
+    border: 1px solid transparent;
+}
+
+.col .contents_11 .box_1 ::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 1px solid white;
+}
+
+.box_1 h4{
+    color:#11a372;
+}
+ 
+.box_1 h3{
+font-size: 19px;
+padding: 10px 0px 6px;
+font-family: 'Kalam', cursive;
+color: #444;
+}
+.box_1 p{
+    line-height: 1.2;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+} 
+
+@media(max-width:768px){
+    main.row{
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2){
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+            
